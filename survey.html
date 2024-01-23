@@ -1,0 +1,132 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+
+	<title>Sports Survey</title> 
+</head> 
+<style>
+    body{
+        text-align: center;
+        max-width: 400px;
+        margin: 0 auto;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        background-image: url("https://cdn.sportsbettingdime.com/app/uploads/media/1/SoccerField.png");
+    }
+</style>
+
+<body> 
+
+	
+	<div class="container"> 
+		<h1>Survey Form</h1> 
+		<form id="surveyForm"> 
+
+			<label for="name"> 
+				Name: 
+			</label>
+			<input type="text"
+				id="name"
+				name="name"
+				required><br> <br>  
+                 Gmail:<input type="email"><br><BR>
+                    Phoneno:<input type="number"><br><br><label for="age"> 
+                        Age: 
+                    </label>
+                    <input type="number"
+                        id="age"
+                        name="age"
+                        required><br><br>
+        
+
+			<label> 
+				Favorite type of Sport 
+			</label><br> 
+			<input type="radio"
+				id="indoor"
+				name="type"
+				value="Indoor"
+				required> 
+			
+			<label for="indoor"> 
+				Indoor 
+			</label><br> 
+			<input type="radio"
+				id="outdoor"
+				name="type"
+				value="Outdoor"
+				required> 
+			
+		<label for="outdoor"> 
+			Outdoor 
+			</label><br> 
+			<input type="radio"
+				id="both"
+				name="type"
+				value="Both"
+				required> 
+
+			<label for="both"> 
+				Both 
+			</label><br> <br>
+         Sports
+<select> 
+    <option value="Cricket">Sports</option> 
+    <option value="Cricket">Cricket</option>   
+    <option value="Football">Football</option>  
+    <option value="Chess">Chess</option>  
+    <option value="Boxing">Boxing</option>  
+    <option value="Kabaddi">Kabaddi</option>  
+
+      
+    </select> <br><br> 
+
+
+			<label for="favourite-sport"> 
+				Favorite Sport to Watch: 
+			</label>
+			<input type="text"
+				id="favorite-sport"
+				name="favorite-sport"
+				required><br> <br>
+
+			<label for="favorite--sport"> 
+				Favorite Sport to Play: 
+			</label> 
+			<input type="text"
+				id="favorite--sport"
+				name="favorite--sport"
+				required><br> <br>
+
+			<label for="favorite-sport-person"> 
+				Favorite Sports-person: 
+			</label>
+			<input type="text"
+				id="favorite-sport-person"
+				name="favorite-sport-person"
+				required><br> <br>
+
+
+			<label for="feedback"> 
+				Your Thoughts on Sports (optional): 
+			</label> 
+			<textarea id="msg" name="msg"
+					rows="4" cols="10" required> 
+			</textarea> <br><br>
+
+
+
+			<button type="submit"> 
+				Submit 
+			</button> 
+		</form> 
+	</div> 
+</body> 
+
+</html>
