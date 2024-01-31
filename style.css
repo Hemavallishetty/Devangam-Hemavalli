@@ -1,0 +1,109 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+.search input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+}
+
+.search button {
+    padding: 10px 20px;
+    background-color: #232f3e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cart {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #232f3e;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
