@@ -1,132 +1,78 @@
-
-<!DOCTYPE html> 
-<html lang="en"> 
-
-<head> 
-	<meta charset="UTF-8"> 
-	<meta name="viewport"
-		content="width=device-width, 
-				initial-scale=1.0"> 
-
-	<title>Sports Survey</title> 
-</head> 
-<style>
-    body{
-        text-align: center;
-        max-width: 400px;
-        margin: 0 auto;
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        background-image: url("https://cdn.sportsbettingdime.com/app/uploads/media/1/SoccerField.png");
-    }
-</style>
-
-<body> 
-
-	
-	<div class="container"> 
-		<h1>Survey Form</h1> 
-		<form id="surveyForm"> 
-
-			<label for="name"> 
-				Name: 
-			</label>
-			<input type="text"
-				id="name"
-				name="name"
-				required><br> <br>  
-                 Gmail:<input type="email"><br><BR>
-                    Phoneno:<input type="number"><br><br><label for="age"> 
-                        Age: 
-                    </label>
-                    <input type="number"
-                        id="age"
-                        name="age"
-                        required><br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        #middle{
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+        }
+        fieldset{
+            width: 400px;
+        }
+        body{
+            background-color: bisque;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: medium;
+            
+        }
+        #submit{
+            background-color: rgb(105, 150, 94);
+        }
+        #submit:hover{
+            color: rgb(26, 26, 212);
+            background-color: burlywood;
+        }
         
-
-			<label> 
-				Favorite type of Sport 
-			</label><br> 
-			<input type="radio"
-				id="indoor"
-				name="type"
-				value="Indoor"
-				required> 
-			
-			<label for="indoor"> 
-				Indoor 
-			</label><br> 
-			<input type="radio"
-				id="outdoor"
-				name="type"
-				value="Outdoor"
-				required> 
-			
-		<label for="outdoor"> 
-			Outdoor 
-			</label><br> 
-			<input type="radio"
-				id="both"
-				name="type"
-				value="Both"
-				required> 
-
-			<label for="both"> 
-				Both 
-			</label><br> <br>
-         Sports
-<select> 
-    <option value="Cricket">Sports</option> 
-    <option value="Cricket">Cricket</option>   
-    <option value="Football">Football</option>  
-    <option value="Chess">Chess</option>  
-    <option value="Boxing">Boxing</option>  
-    <option value="Kabaddi">Kabaddi</option>  
-
-      
-    </select> <br><br> 
-
-
-			<label for="favourite-sport"> 
-				Favorite Sport to Watch: 
-			</label>
-			<input type="text"
-				id="favorite-sport"
-				name="favorite-sport"
-				required><br> <br>
-
-			<label for="favorite--sport"> 
-				Favorite Sport to Play: 
-			</label> 
-			<input type="text"
-				id="favorite--sport"
-				name="favorite--sport"
-				required><br> <br>
-
-			<label for="favorite-sport-person"> 
-				Favorite Sports-person: 
-			</label>
-			<input type="text"
-				id="favorite-sport-person"
-				name="favorite-sport-person"
-				required><br> <br>
-
-
-			<label for="feedback"> 
-				Your Thoughts on Sports (optional): 
-			</label> 
-			<textarea id="msg" name="msg"
-					rows="4" cols="10" required> 
-			</textarea> <br><br>
-
-
-
-			<button type="submit"> 
-				Submit 
-			</button> 
-		</form> 
-	</div> 
-</body> 
-
+    </style>
+</head>
+<body align="center">
+    <h1> Election Survey form</h1>
+    <form id="middle" action="survey.php" method="POST">
+        <fieldset>
+            <legend>Voter Details</legend>
+         <label for="fname">First Name:</label>
+         <input type="text" id="fname" name="fname" required/><br><br>
+         <label for="lname">Last Name:</label>
+         <input type="text" id="lname" name="lname" required/><br><br>
+         <label for="mobile">Mobile Number:</label>
+         <input type="tel" id="mobile" name="mobile" required/><br><br>
+         <label for="voteid">Voter Id:</label>
+         <input type="text" id="voteid" name="voteid" required/><br><br>
+         <label id="user_gender">Gender:</label> <br>
+         <input type="radio" checked="true" id="user_gender" name="user_gender">Male<br> 
+         <input type="radio" id="user_gender"  name="user_gender">Female<br>
+         <input type="radio" id="user_gender" name="user_gender">Others<br><br>
+         <label for="cvote">For which governement do you vote this year?</label><br>
+         <input type="radio" checked="true" id="cvote" name="cvote">YCP<br>
+         <input type="radio" checked="true" id="cvote" name="cvote">TDP<br>
+         <input type="radio" checked="true" id="cvote" name="cvote">BJP<br>
+         <input type="radio" checked="true" id="cvote" name="cvote">Janasena<br>
+         <input type="radio" checked="true" id="cvote" name="cvote">NOTA<br><br>
+         <label for="service">What servies do you recieve from the present government?</label><br><br>
+         <input type="checkbox" id="service" name="service" value="Education">Education Improvement<br>
+         <input type="checkbox" id="service" name="service" value="Employment">Employment Increment<br>
+         <input type="checkbox" id="service" name="service" value="Road">Road Services<br>
+         <input type="checkbox" id="service" name="service" value="House">House Distribution<br>
+         <input type="checkbox" id="service" name="service" value="Scholarship">Scholarships<br><br>
+         <label for="rating">Rate the present government!</label>
+        <select>
+            <option id="rating" value=""></option>
+            <option id="rating" value="1">1</option>
+            <option id="rating" value="2">2</option>
+            <option id="rating" value="3">3</option>
+            <option id="rating" value="4">4</option>
+            <option id="rating" value="5">5</option>
+        </select><br><br>
+        <label for="opinion">Would you again need present governement:</label><br>
+        <input type="radio" checked="true" id="opinion" name="opinion">Yes<br> 
+        <input type="radio" id="opinion"  name="opinion">No<br><br>
+        <input type="submit" id="submit" name="submit" value="submit">
+    </fieldset>
+    </form>
+</body>
 </html>

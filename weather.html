@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.weather-container {
+    background-color: #fff;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_sQWkBFy1n_6G53Umpl6C4rQfgy88ogJGQLGyx80d-w&s");
+    max-width: 800px;
+       margin: 20px auto;
+       padding: 20px;
+       background-color: #fff;
+       border-radius: 5px;
+       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container {
+       max-width: 800px;
+       margin: 20px auto;
+       padding: 20px;
+       background-color: #fff;
+       border-radius: 5px;
+       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+h1 {
+    color: #333;
+    text-align:center;
+}
+
+.location {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.temperature,.description,.humidity,.wind-speed {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]{
+            background-color: blue;
+    }
+    button[type="submit"]:hover{+
+            background-color: blue;
+    }
+</style>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather Dashboard</h1>
+        <div class="location">Chittoor, AndhraPradesh</div>
+        <div class="weather-details">
+            <div class="temperature">Temperature: 25°C</div>
+            <div class="description">Description: Sunny</div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind-speed">Wind Speed: 10 km/h</div>
+        </div>
+    </div>
+    <div class="container" id="user">
+        <h1>Queries</h1>
+        <form action="w1connect.php" method="POST">
+            Username:<input type="text" name="name" id="name" required><br><br>
+            Email:<input type="email" name="email" id="email" required> <br> <br>
+            City:<input type="text" name="city" id="city" required><br> <br>
+            Queries:
+            <textarea name="queries" id="queries" rows="5" cols="20"></textarea> <br><br>
+            <button type="submit" name="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
